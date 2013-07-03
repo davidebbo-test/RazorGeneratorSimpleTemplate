@@ -1,0 +1,14 @@
+@* Generator: Template *@
+
+@functions {
+    public int Max { get; set; }
+    public string Message { get; set; }
+}
+
+
+<ul>
+@for (int i = 0; i < Max; i++)
+{
+    <li>Hello @Message @i!</li>  
+}
+</ul>
