@@ -12,6 +12,11 @@ namespace RazorGeneratorSimpleTemplate
         {
             var template = new SampleTemplate { Message = "David", Max = 10 };
             Console.WriteLine(template.TransformText());
+
+            Console.WriteLine("-------------");
+
+            var template2 = new SampleTemplateWithBase { Max = 10 };
+            Console.WriteLine(template2.TransformText());
         }
     }
 }
